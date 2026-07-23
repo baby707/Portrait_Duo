@@ -143,7 +143,13 @@
             form below and let's capture your special moments.
           </p>
 
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            name="contact"
+            method="post"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <label for="name"> Name </label>
 
             <input
